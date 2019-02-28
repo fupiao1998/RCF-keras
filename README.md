@@ -7,7 +7,7 @@ The backbone of this task now is VGG16, I will make a ResNet-based version in th
 - [ ] ResNet backbone
 - [ ] Evaluation function of ODS F-score
 ### Model
-Download the pre-trained model in [baidunetdisk](https://pan.baidu.com/s/1IL3P8Qn-ICGYxbIFojO8XQ)
+Download the pre-trained vgg-RCF model in [baidunetdisk](https://pan.baidu.com/s/1IL3P8Qn-ICGYxbIFojO8XQ)
 ![model struct](https://github.com/fupiao1998/RCF-keras/blob/master/pictures/model%20struct.png)
 ### Related Projects
 [RCF-pytorch](https://github.com/meteorshowers/RCF-pytorch)
