@@ -4,7 +4,7 @@ Created by Yuxin Mao, if you have any problem in using it, please contact: maoyu
 The backbone of this task now is VGG16, I will make a ResNet-based version in the future.
 ### To do list
 - [x] VGG16 backbone
-- [ ] ResNet backbone
+- [x] ResNet backbone
 - [ ] Evaluation function of ODS F-score
 ### Model
 Download the pre-trained vgg-RCF model in [baidunetdisk](https://pan.baidu.com/s/1IL3P8Qn-ICGYxbIFojO8XQ)
