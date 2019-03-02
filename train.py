@@ -11,23 +11,6 @@ from model.rcf_model_large_resnet import resnet_rcf_large
 from model.rcf_model_resnext import resnext_rcf
 from model.rcf_model_resnet import resnet_rcf
 
-'''
--npath C:\\Users\\dell\\Downloads\\BSR_bsds500\\BSR\\BSDS500\\data\\
--mpath D:\\all-PythonCodes\\RCFs\\RCF-keras\\
--lpath D:\\all-PythonCodes\\RCFs\\RCF-keras\\log\\
--name resnet_rcf_test
--r 320
--c 480
-'''
-
-'''
--npath D:\\all-PythonCodes\\RCFs\\RCF-keras\\building_data\\111\\
--mpath D:\\all-PythonCodes\\RCFs\\RCF-keras\\
--lpath D:\\all-PythonCodes\\RCFs\\RCF-keras\\log\\
--name resnet_rcf_test.h5
--r 256
--c 256
-'''
 
 def args_parse():
     # construct the argument parse and parse the arguments
