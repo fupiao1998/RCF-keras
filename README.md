@@ -5,6 +5,7 @@ The backbone of this task now is VGG16, I will make a ResNet-based version in th
 ### To do list
 - [x] VGG16 backbone
 - [x] ResNet backbone
+- [x] ResNeXt backbone
 - [ ] Evaluation function of ODS F-score
 ### Model
 Download the pre-trained vgg-RCF model in [baidunetdisk](https://pan.baidu.com/s/1IL3P8Qn-ICGYxbIFojO8XQ)
