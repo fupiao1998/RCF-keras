@@ -14,10 +14,11 @@ I implemented the edge detection model structure in the paper "Learning to Predi
 What's more, I got a new idea from the "PCB" structure. Maybe I can fuse the idea of RCF and "PCB", which means combine the features of each layer of convolution in the PCB and fuse them. This experiment will also be completed in the follow-up work.
 ### Train
 For BSDS500 dataset, you can run the file 'data_generate_forBSD.py' for generate '.npy' files for train and validation. What you need to pay attention to is to modify the path of your data set.
+
 Then you can run 'train.py' for train RCF series models, if you want to train "PCB" model, you can run 'train_PCB.py'. The reason for the difference between the two files is that RCF combines the features of multiple convolutional layers, but the PCB uses only one.
 ### Model
 Download the pre-trained vgg-RCF model in [BaiduNetDisk](https://pan.baidu.com/s/1IL3P8Qn-ICGYxbIFojO8XQ)
-Download the pre-trained "PCB" model in [BaiduNetDisk](https://pan.baidu.com/s/1IL3P8Qn-ICGYxbIFojO8XQ)
+Download the pre-trained "PCB" model in [BaiduNetDisk](https://pan.baidu.com/s/1oOqbSbx4CY3ZKWzYmCOxag)password:e6l1 
 ![vgg model struct](https://github.com/fupiao1998/RCF-keras/blob/master/pictures/model%20struct.png)
 ### Related Projects
 [RCF-pytorch](https://github.com/meteorshowers/RCF-pytorch)
