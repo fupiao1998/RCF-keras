@@ -14,7 +14,29 @@ def _to_tensor(x, dtype):
     if x.dtype != dtype:
         x = tf.cast(x, dtype)
     return x
+    
+    
+def cross_entropy_loss_RCF(y_true, y_pred):
+    _epsilon = _to_tensor(K.epsilon(), y_pred.dtype.base_dtype)
+    y_pred = tf.clip_by_value(y_pred, _epsilon, 1 - _epsilon)
+    y_pred = tf.log(y_pred / (1 - y_pred))
 
+    y_true = tf.cast(y_true, tf.float32)
+    lamda = 1.2
+    count_neg = tf.reduce_sum(1. - y_true)
+    count_pos = tf.reduce_sum(y_true)
+    alpha = lamda * count_pos / (count_neg + count_pos)
+    beta = count_neg / (count_neg + count_pos)
+
+    pos_weight = beta / alpha
+
+    cost = tf.nn.weighted_cross_entropy_with_logits(logits=y_pred, targets=y_true, pos_weight=pos_weight)
+
+    # Multiply by 1 - beta
+    cost = tf.reduce_mean(cost * (1 - beta))
+
+    # check if image has no edge pixels return 0 else return complete error function
+    return tf.where(tf.equal(count_pos, 0.0), 0.0, cost)
 
 def cross_entropy_balanced(y_true, y_pred):
     """
