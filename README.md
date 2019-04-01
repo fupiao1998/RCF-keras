@@ -1,7 +1,7 @@
 # RCF-keras
 A keras implementation of RCF(Richer Convolutional Features for Edge Detection) for image edge detection.
 
-Created by Yuxin Mao, if you have any problem in using it, please contact: maoyuixnssyh@my.swjtu.deu.cn
+Created by Yuxin Mao, if you have any problem in using it, please contact: maoyuxinssyh@my.swjtu.deu.cn
 
 The backbones of this task now is VGG16, ResNet and ResNeXt. Maybe I will give a DenseNet and MobileNet implementation. And I implement the network structure in paper "Learning to Predict Crisp Boundaries"
 
